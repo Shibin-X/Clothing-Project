@@ -27,11 +27,33 @@
                left: 50%;
           }
           .container1{
-               background-image: url(clothing-img/view-hawaiian-shirt-with-floral-print-hanger.jpg);
                height: 550px;
                background-size: cover;
                text-align: center;
                padding: 30px;
+               animation: anime 5s ease infinite;
+          }
+          @keyframes anime{
+               0%{
+                    background-image: url(clothing-img/clothBC1.jpg);
+                    background-size: cover;
+               }
+               25%{
+                    background-image: url(clothing-img/clothBC2.jpg);
+                    background-size: cover;
+               }
+               50%{
+                    background-image: url(clothing-img/clothBC3.jpg);
+                    background-size: cover;
+               }
+               75%{
+                    background-image: url(clothing-img/clothBC5.jpg);
+                    background-size: cover;
+               }
+               100%{
+                    background-image: url(clothing-img/view-hawaiian-shirt-with-floral-print-hanger.jpg);
+                    background-size: cover;
+               }
           }
           h2{
                font-weight: 60;
@@ -58,12 +80,20 @@
                background-size: cover;
                box-shadow: 0 0 10px;
           }
+          .subcontainer2:hover{
+               transform: scale(0.9);
+               transition-duration: 0.8s;
+          }
           .subcontainer3{
                height: 600px;
                width: 550px;
                background-image: url(clothing-img/img2.png);
                background-size: cover;
                box-shadow: 0 0 10px;
+          }
+          .subcontainer3:hover{
+               transform: scale(0.9);
+               transition-duration: 0.8s;
           }
           h3{
                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
@@ -110,6 +140,10 @@
                width: 250px;
                box-shadow: 0 0 10px;
           }
+          .topwearcards:hover{
+               transform: translateY(-5%);
+               transition-duration: 1s;
+          }
           .firstletter{
                color:rgb(215, 148, 60);
                display: inline-block;
@@ -133,19 +167,33 @@
                height: 350px;
                width: 250px;
           }
-          .shirtimg1{
-               height: 350px;
-               width: 250px;
-          }
           .topwearcards p{
                font-family: Arial, Helvetica, sans-serif;
                font-size: 12px;
           }
           .container4{
-               background-image: url(clothing-img/clothingbc4.jpg);
                height: 500px;
                background-size: cover;
                opacity: 90%;
+               animation: imageslider 4s ease infinite;
+          }
+          @keyframes imageslider {
+               0%{
+                    background-image: url(clothing-img/clothingbc4.jpg);
+                    background-size: cover;
+               }
+               33%{
+                    background-image: url(clothing-img/clothBC6.jpg);
+                    background-size: cover;
+               }
+               66%{
+                    background-image: url(clothing-img/clothBC3.jpg);
+                    background-size: cover;
+               }
+               100%{
+                    background-image: url(clothing-img/clothBC7.jpg);
+                    background-size: cover;
+               }
           }
           .subcontainerof4{
                width: 400px;
