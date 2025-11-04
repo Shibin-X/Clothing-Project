@@ -1,3 +1,16 @@
-function cards(){
-     window.open("https://www.marvel.com/comics")
-}
+$(document).ready(function(){
+     $("#top-btn").click(function(){
+          $("#topwear").show(300)
+          $("#bottomwear").hide(300)
+     })
+      $("#bottom-btn").click(function(){
+           $("#bottomwear").show(300)
+          $("#topwear").hide(300)
+     })
+     $("#viewall-btn").click(function(){
+          $("#topwear,#bottomwear").show()
+     })
+     $("#shopnow-btn").click(function(){
+          window.open("https://www.marvel.com/comics")
+     })
+})
