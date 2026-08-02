@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(clothing-img/);
+            background-size: cover;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+        .container{
+            height: auto;
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            cursor: pointer;
+            padding: 20px;
+            transition: transform 0.5s ease;
+        }
+         .container:hover{
+            transform: scale(1.05);
+        }
+        .inputline{
+            margin: 10px;
+            padding: 12px;
+            width: 85%;
+            opacity: 70%;
+            border-radius: 25px;
+            border: none;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 30px;
+            font-size: 10px;
+        }
+        .login{
+            padding: 8px;
+        }
+        .forgot,.create{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        .create{
+            margin-top: 20px;
+            display: inline;
+            font-size: 12px;
+        }
+        .forgot:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 0);
+        }
+        .create:hover{
+            text-decoration: underline;
+            color: rgb(0, 255, 0);
+        }
+        .login{
+            background-color: red;
+            color: antiquewhite;
+            padding:12px 40px;
+            margin-top: 15px;
+            border-radius: 25px;
+            border: none;
+        }
+        .login:hover{
+          transition-duration: 0.3s;
+          background-color: rgb(216, 6, 6);
+          transition-timing-function: ease-in-out;
+        }
+        .title{
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+       .checkit{
+        accent-color: rgb(217, 255, 0);
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <form name="myform" method="post" action="" onsubmit="return validateform()">
+    <div class="container">
+        <h2 class="title">Login</h2>
+        <input class="inputline" type="email" name="email" placeholder="Enter your Email" required onfocus="changebc(this)"><br>
+        <input class="inputline" type="password" name="password" placeholder="Password" required onfocus="changebc(this)"><br>
+        <div class="options">
+        <label for="">
+            <input type="checkbox" class="checkit">Remember Me
+        </label>
+        <a class="forgot" href="">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login">Login</button>
+        <a href="" class="create">Create Account</a>
+    </div>
+
+    <script>
+      function validateform(){
+        var a= document.myform.email.value;
+        var b= document.myform.password.value;
+        if(a=="shibin123@gmail.com" && b=="111"){
+          alert("Login Successfully")
+          window.open("index.html")
+        }
+        else{
+          alert("Wrong Email And Password")
+        }
+      }
+      function changebc(x){
+        x.style.background="skyblue"
+      }
+    </script>
+    </form>
+</body>
+</html>

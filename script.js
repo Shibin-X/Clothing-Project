@@ -14,3 +14,4 @@ $(document).ready(function(){
           window.open("https://www.marvel.com/comics")
      })
 })
+
